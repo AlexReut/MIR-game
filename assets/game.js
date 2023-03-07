@@ -78,8 +78,8 @@ const startGame = () => {
     state.loop = setInterval(() => {
         state.totalTime++
 
-        selectors.moves.innerText = `${state.totalFlips} moves`
-        selectors.timer.innerText = `time: ${state.totalTime} sec`
+        selectors.moves.innerText = `${state.totalFlips} ходов`
+        selectors.timer.innerText = `time: ${state.totalTime} секунд`
     }, 1000)
 }
 
@@ -122,9 +122,9 @@ const flipCard = card => {
             selectors.boardContainer.classList.add('flipped')
             selectors.win.innerHTML = `
                 <span class="win-text">
-                    You won!<br />
-                    with <span class="highlight">${state.totalFlips}</span> moves<br />
-                    under <span class="highlight">${state.totalTime}</span> seconds
+                    Ты победил!<br />
+                    За <span class="highlight">${state.totalFlips}</span> ходов<br />
+                    и <span class="highlight">${state.totalTime}</span> секунд
                 </span>
             `
 
