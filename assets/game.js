@@ -79,7 +79,7 @@ const startGame = () => {
         state.totalTime++
 
         selectors.moves.innerText = `${state.totalFlips} ходов`
-        selectors.timer.innerText = `time: ${state.totalTime} секунд`
+        selectors.timer.innerText = `${state.totalTime} секунд`
     }, 1000)
 }
 
